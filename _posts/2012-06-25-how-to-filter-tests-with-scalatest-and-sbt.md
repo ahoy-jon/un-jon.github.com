@@ -2,8 +2,8 @@
 layout: post
 title: "How to filter tests with ScalaTest and SBT"
 description: ""
-category: 
-tags: []
+category: scala
+tags: [scala , sbt , scalatest]
 ---
 {% include JB/setup %}
 
