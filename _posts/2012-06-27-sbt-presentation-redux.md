@@ -3,7 +3,7 @@ layout: post
 title: "SBT Presentation redux"
 description: ""
 category: scala
-tags: [fr sbt]
+tags: [fr , sbt]
 ---
 {% include JB/setup %}
 
