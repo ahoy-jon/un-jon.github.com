@@ -61,6 +61,7 @@ Et faire l'appel genericStringFrom sur des personnes avec la typeclasse (ie, l'i
 ##Exemple depuis lisp
 
 L'exemple "classique" du multidispatch, c'est la gestion de collision entre plusieurs objets en Lisp : 
+
 {% highlight lisp lineos %}
 (defmethod collide-with ((x asteroid) (y asteroid))
    ;; deal with asteroid hitting asteroid
