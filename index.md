@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ahoy !
-tagline: Supporting tagline
+tagline: 
 ---
 {% include JB/setup %}
 
