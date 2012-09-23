@@ -12,7 +12,7 @@ tags: []
 Le multidispatch existe vraiment en Scala.
 
 
-François a écrit un très bon article sur le multidispatch en Java sur le blog de Xebia http://blog.xebia.fr/2012/09/19/mais-pourquoi-ny-a-t-il-pas-de-multidispatch-en-java/.
+François a écrit un très bon article sur le multidispatch en Java sur le [blog de Xebia](http://blog.xebia.fr/2012/09/19/mais-pourquoi-ny-a-t-il-pas-de-multidispatch-en-java/).
 
 L'idée est de compléter un peu sur la partie Scala. En Scala il y a le partern matching qui permet de déclarer un comportement différent par pattern : 
 
@@ -60,7 +60,7 @@ Et faire l'appel genericStringFrom sur des personnes avec la typeclasse (ie, l'i
 
 ##Une note sur les typeclasses
 
-Le concept de typeclasses en Scala est hyper important, je ne vais pas le couvrir en détail ici, je vous recommande d'aller regarder la présentation de Seth Tissue sur le sujet : http://marakana.com/s/the_typeclass_pattern_in_scala_an_alternative_to_inheritance,1112/index.html .
+Le concept de typeclasses en Scala est hyper important, je ne vais pas le couvrir en détail ici, je vous recommande d'aller regarder [la présentation de Seth Tissue sur le sujet](http://marakana.com/s/the_typeclass_pattern_in_scala_an_alternative_to_inheritance,1112/index.html).
 
 On peut aussi voir du coté de Scalaz qui se base complétement sur ce concept.
 
