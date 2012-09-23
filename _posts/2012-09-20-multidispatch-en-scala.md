@@ -177,7 +177,7 @@ On a le multidispatch en Scala via les typeclasses. C'est un peu verbeux, mais c
 
 ##Une note sur les typeclasses
 
-Le concept de typeclasses en Scala est hyper important, je ne vais pas le couvrir en détail ici, je vous recommande d'aller regarder [la présentation de Seth Tissue sur le sujet](http://marakana.com/s/the_typeclass_pattern_in_scala_an_alternative_to_inheritance,1112/index.html).
+Le concept de typeclasses en Scala est hyper important, je ne vais pas le couvrir ici, je vous recommande d'aller regarder [la présentation de Seth Tissue sur le sujet](http://marakana.com/s/the_typeclass_pattern_in_scala_an_alternative_to_inheritance,1112/index.html).
 
 On peut aussi voir du coté de Scalaz qui se base complétement sur ce concept.
 
