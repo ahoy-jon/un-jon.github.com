@@ -15,9 +15,9 @@ Filtering in ScalaTest works with [tags](http://www.scalatest.org/user_guide/tag
 
 You can add filtering argument in sbt via TestOptions [1] : 
 
-```
+{% highlight scala %}
 testOptions in Test += Tests.Argument("-l", "MyTag")
-```
+{% endhighlight %}
 
 You can look for a complete example about it [https://github.com/un-jon/psychic-octo-lana](https://github.com/un-jon/psychic-octo-lana) and my related pull-request in banana-rdf  : [https://github.com/w3c/banana-rdf/pull/9](https://github.com/w3c/banana-rdf/pull/9) 
 
