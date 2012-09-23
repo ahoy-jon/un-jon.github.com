@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Multidispatch en Scala"
+title: "Le Multidispatch en Scala"
 description: ""
+tagline: C'est possible
 category: 
 tags: []
 ---
