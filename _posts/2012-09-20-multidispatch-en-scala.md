@@ -8,7 +8,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-#TL;DR 
+##TL;DR 
 Le multidispatch existe vraiment en Scala.
 
 
@@ -58,7 +58,7 @@ implicit val perS = new Stringfier[Personne] {def stringFrom(p: Personne) = "Per
 Et faire l'appel genericStringFrom sur des personnes avec la typeclasse (ie, l'implicit) dans le scope. 
 
 
-#Une note sur les typeclasses
+##Une note sur les typeclasses
 
 Le concept de typeclasses en Scala est hyper important, je ne vais pas le couvrir en détail ici, je vous recommande d'aller regarder la présentation de Seth Tissue sur le sujet : http://marakana.com/s/the_typeclass_pattern_in_scala_an_alternative_to_inheritance,1112/index.html .
 
