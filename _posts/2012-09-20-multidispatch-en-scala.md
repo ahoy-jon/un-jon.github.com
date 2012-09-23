@@ -24,7 +24,7 @@ def stringFrom(value: Any): String = value match {
 }
 {% endhighlight %}
 
-C'est une méthode élégante (le pattern matching en Scala poutre sérieusement), mais qui n'a pas l'avantage d'être très extensible. Dans le snipset précedent, les types traités sont seulement String, Int et Any, si l'on veut traiter MonTypeAMoi, ce n'est pas possible.
+C'est une méthode élégante (le pattern matching en Scala poutre sérieusement), mais qui n'a pas l'avantage d'être très extensible. Dans le snipset précedent, les types traités sont seulement String, Int et Any, si l'on veut traiter MonTypeAMoi, en l'état, ce n'est pas vraiment possible.
 
 Pour faire du vrai multidispath en Scala, on peut utiliser les typeclasses : 
 
