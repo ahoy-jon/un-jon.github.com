@@ -16,7 +16,7 @@ François a écrit un très bon article sur le multidispatch en Java sur le [blo
 
 L'idée est de compléter un peu sur la partie Scala. En Scala il y a le partern matching qui permet de déclarer un comportement différent par pattern : 
 
-{% highlight scala linenos %}
+{% highlight scala %}
 def stringFrom(value: Any): String = value match {
   case s:String => "String: " + s
   case i:Int => "Integer: " + i
@@ -24,11 +24,11 @@ def stringFrom(value: Any): String = value match {
 }
 {% endhighlight %}
 
-C'est une méthode élégante (le pattern matching en Scala poutre sérieusement), mais qui n'a pas l'avantage d'être très extensible. Dans le snipset précedent, les types traités sont seulement String, Int et Any, si l'on veut traiter MonTypeAMoi, en l'état, ce n'est pas vraiment possible.
+C'est une méthode élégante (le pattern matching en Scala poutre sérieusement), mais qui n'a pas l'avantage d'être très extensible. Dans le code précedent, les types traités sont seulement String, Int et Any, si l'on veut traiter MonTypeAMoi, en l'état, ce n'est pas vraiment possible.
 
 Pour faire du vrai multidispath en Scala, on peut utiliser les typeclasses : 
 
-{% highlight scala lineos %}
+{% highlight scala %}
 trait Stringfier[T] {
   def stringFrom(t: T):String
 }
@@ -51,7 +51,7 @@ println(genericStringFrom((1,2).asInstanceOf[Any]))
 
 Si je veux étendre le comportement de Stringfier je peux écrire : 
 
-{% highlight scala lineos %}
+{% highlight scala %}
 implicit val perS = new Stringfier[Personne] {def stringFrom(p: Personne) = "Personne : " p.nom}
 {% endhighlight %}
 
@@ -62,7 +62,7 @@ Et faire l'appel genericStringFrom sur des personnes avec la typeclasse (ie, l'i
 
 L'exemple "classique" du multidispatch, c'est la gestion de collision entre plusieurs objets en Lisp : 
 
-{% highlight lisp lineos %}
+{% highlight lisp %}
 (defmethod collide-with ((x asteroid) (y asteroid))
    ;; deal with asteroid hitting asteroid
    )
@@ -79,7 +79,7 @@ L'exemple "classique" du multidispatch, c'est la gestion de collision entre plus
 
  En Scala cela donne avec l'implémentation :
 
-{% highlight scala lineos %}
+{% highlight scala %}
   case class CollidingResult(result:String)
   
   trait Collider[A,B] {
@@ -146,7 +146,7 @@ L'exemple "classique" du multidispatch, c'est la gestion de collision entre plus
 
 S'il on veut étendre les régles de la simulation, on peut faire comme ceci : 
 
-{% highlight scala lineos %}
+{% highlight scala %}
 case class NX(name:String)
   object NXCollidingRules {
     implicit val collideWithAst = new Collider[NX,Asteroid] {
