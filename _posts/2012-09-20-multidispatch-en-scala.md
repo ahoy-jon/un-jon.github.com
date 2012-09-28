@@ -8,13 +8,12 @@ tags: [fr, scala]
 ---
 {% include JB/setup %}
 
-##TL;DR 
-Le multidispatch existe vraiment en Scala.
+TL;DR : Le multidispatch existe vraiment en Scala.
 
 
 François a écrit un très bon article sur le multidispatch en Java sur le [blog de Xebia](http://blog.xebia.fr/2012/09/19/mais-pourquoi-ny-a-t-il-pas-de-multidispatch-en-java/).
 
-L'idée est de compléter un peu sur la partie Scala. En Scala il y a le partern matching qui permet de déclarer un comportement différent par pattern : 
+L'idée est de compléter un peu. En Scala il y a le partern matching qui permet de déclarer un comportement différent par pattern : 
 
 {% highlight scala %}
 def stringFrom(value: Any): String = value match {
@@ -24,7 +23,7 @@ def stringFrom(value: Any): String = value match {
 }
 {% endhighlight %}
 
-C'est une méthode élégante (le pattern matching en Scala poutre sérieusement), mais qui n'a pas l'avantage d'être très extensible. Dans le code précedent, les types traités sont seulement String, Int et Any, si l'on veut traiter MonTypeAMoi, en l'état, ce n'est pas vraiment possible.
+c'est une méthode élégante (le pattern matching en Scala poutre sérieusement), mais cela n'a pas l'avantage d'être très extensible. Dans le code précedent, les types traités sont seulement String, Int et Any, si l'on veut traiter MonTypeAMoi, en l'état, ce n'est pas vraiment possible.
 
 Pour faire du vrai multidispath en Scala, on peut utiliser les typeclasses : 
 
