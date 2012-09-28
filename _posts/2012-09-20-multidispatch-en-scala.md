@@ -62,7 +62,7 @@ Et faire l'appel genericStringFrom sur des personnes avec la typeclasse (ie, l'i
 
 L'exemple "classique" du multidispatch, c'est la gestion de collision entre plusieurs objets en Lisp : 
 
-{% highlight lisp %}
+{% highlight clojure %}
 (defmethod collide-with ((x asteroid) (y asteroid))
    ;; deal with asteroid hitting asteroid
    )
@@ -75,7 +75,7 @@ L'exemple "classique" du multidispatch, c'est la gestion de collision entre plus
  (defmethod collide-with ((x spaceship) (y spaceship))
    ;; deal with spaceship hitting spaceship
    )
- {% endhighlight %}
+{% endhighlight %}
 
  En Scala cela donne avec l'implémentation :
 
