@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hello World!
-tagline: Supporting tagline
+tagline: With some help from Joseph of Craftmanship.
 ---
 {% include JB/setup %}
 
